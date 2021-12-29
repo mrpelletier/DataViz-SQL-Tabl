@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\Task1Output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Task1Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Master Patient ID" size="15" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient InICU Flag" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Address Number" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Address Street" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Address Full" size="65" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient City" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Zip Code" size="12" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient County" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient State" size="2" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Country" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Name" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Gender" size="1" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient LACE Score" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="Patient Marital Status" size="15" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Primary Language" size="20" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Is Citizen Flag" size="1" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Is Deceased Flag" size="1" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient PCP Type" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Ethnicity" size="35" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Name" size="65" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Number" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Street" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Full" size="65" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital City" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Zip Code" size="12" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital County" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital State" size="2" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Country" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Department Name" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Specialty Description" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Primary ICD Diagnosis Code" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Admit ICD Diangosis Code" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Primary ICD Procedure Code" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Primary Payor ID" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Total Account Balance $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="Total Account Adjustment $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="Total Account Charge $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="Total Account Payment $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="HRRP Condition" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Patient Admission Date" source="Formula: DateTimeParse([_CurrentField_],'%m-%d-%Y')" type="Date" />
+            <Field name="Patient Discharge Date" source="Formula: DateTimeParse([_CurrentField_],'%m-%d-%Y')" type="Date" />
+            <Field name="Patient DOB" source="Formula: DateTimeParse([_CurrentField_],'%m-%d-%Y')" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeDiff(DateTimeNow(),[Patient DOB],'years')" field="Patient Age" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Determine age from current date and DOB
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[Patient Age = DateTimeDiff(DateTimeNow(),[Patient DOB],'years')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="306" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeDiff([Patient Discharge Date],[Patient Admission Date],'days')" field="LOS" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Determine length of stay from admit and discharge date
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[LOS = DateTimeDiff([Patient Discharge Date],[Patient Admission Date],'days')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="438" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF(isNull([Patient Age]), 999, [Patient Age])" field="Patient Age" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[If patient age NULL, then 999
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[Patient Age = IIF(isNull([Patient Age]), 999, [Patient Age])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="498" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\CMS_Diagnosis_Descriptioncodes.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CMS_Diagnosis_Descriptioncodes.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DIAGNOSIS CODE" size="255" source="File: C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\CMS_Diagnosis_Descriptioncodes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="LONG DESCRIPTION" size="255" source="File: C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\CMS_Diagnosis_Descriptioncodes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="SHORT DESCRIPTION" size="255" source="File: C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\CMS_Diagnosis_Descriptioncodes.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="618" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Primary ICD Diagnosis Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DIAGNOSIS CODE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_DIAGNOSIS CODE" selected="False" input="Right_" type="V_WString" size="10" />
+                <SelectField field="Right_LONG DESCRIPTION" selected="True" rename="Primary Diagnosis Description" input="Right_" size="100" />
+                <SelectField field="Right_SHORT DESCRIPTION" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Add Diagnosis Desc (Primary)</AnnotationText>
+          <DefaultAnnotationText>Add Diagnosis Desc</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="738" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Union left main and join sets (Left Join)</AnnotationText>
+          <DefaultAnnotationText>Union left main and join sets (Left Join)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="858" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Admit ICD Diangosis Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DIAGNOSIS CODE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_DIAGNOSIS CODE" selected="False" input="Right_" />
+                <SelectField field="Right_LONG DESCRIPTION" selected="True" rename="Admit Diagnosis Description" input="Right_" size="100" />
+                <SelectField field="Right_SHORT DESCRIPTION" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Add Diagnosis Desc (Admit)</AnnotationText>
+          <DefaultAnnotationText>Add Diagnosis Desc (Admit)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="966" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Union left main and join sets (Left Join)</AnnotationText>
+          <DefaultAnnotationText>Union left main and join sets (Left Join)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1002" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\CMS_Procedure_Descriptioncodes.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CMS_Procedure_Descriptioncodes.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PROCEDURE CODE" size="255" source="File: C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\CMS_Procedure_Descriptioncodes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="LONG DESCRIPTION" size="255" source="File: C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\CMS_Procedure_Descriptioncodes.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="SHORT DESCRIPTION" size="255" source="File: C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\CMS_Procedure_Descriptioncodes.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1098" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Primary ICD Procedure Code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="PROCEDURE CODE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_PROCEDURE CODE" selected="False" input="Right_" />
+                <SelectField field="Right_LONG DESCRIPTION" selected="True" rename="Primary Procedure Description" input="Right_" size="100" />
+                <SelectField field="Right_SHORT DESCRIPTION" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Add Primary Procedure Desc</AnnotationText>
+          <DefaultAnnotationText>Add Primary Procedure Desc</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1230" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Union left main and join sets (Left Join)</AnnotationText>
+          <DefaultAnnotationText>Union left main and join sets (Left Join)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1350" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="iif(IsNull([Primary Diagnosis Description]),&quot;MISSING&quot;,[Primary Diagnosis Description])" field="Primary Diagnosis Description" size="100" type="V_String" />
+            <FormulaField expression="iif(IsNull([Admit Diagnosis Description]),&quot;MISSING&quot;,[Admit Diagnosis Description])" field="Admit Diagnosis Description" size="100" type="V_String" />
+            <FormulaField expression="iif(IsNull([Primary Procedure Description]),&quot;MISSING&quot;,[Primary Procedure Description])" field="Primary Procedure Description" size="100" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>If added desc NULL, change to "MISSING"</AnnotationText>
+          <DefaultAnnotationText>Primary Diagnosis Description = iif(IsNull([Primary Diagnosis Description]),"MIS...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1458" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\Task2Output.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Task2Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="8" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="8" Connection="Left" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="10" Connection="Left" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="13" Connection="Left" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>M5- Task2 V1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

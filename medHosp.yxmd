@@ -1,0 +1,475 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\Task3Output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Task3Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Master Patient ID" size="15" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient InICU Flag" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Address Number" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Address Street" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Address Full" size="65" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient City" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Zip Code" size="12" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient County" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient State" size="2" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Country" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Name" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Gender" size="1" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient LACE Score" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="Patient Marital Status" size="15" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Primary Language" size="20" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Is Citizen Flag" size="1" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Is Deceased Flag" size="1" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient PCP Type" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Ethnicity" size="35" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Name" size="65" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Number" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Street" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Full" size="65" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital City" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Zip Code" size="12" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital County" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital State" size="2" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Country" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Department Name" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Specialty Description" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Primary ICD Diagnosis Code" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Admit ICD Diangosis Code" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Primary ICD Procedure Code" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Primary Payor ID" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Total Account Balance $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="Total Account Adjustment $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="Total Account Charge $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="Total Account Payment $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="HRRP Condition" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Patient Admission Date" source="Formula: DateTimeParse([_CurrentField_],'%m-%d-%Y')" type="Date" />
+            <Field name="Patient Discharge Date" source="Formula: DateTimeParse([_CurrentField_],'%m-%d-%Y')" type="Date" />
+            <Field name="Patient DOB" source="Formula: DateTimeParse([_CurrentField_],'%m-%d-%Y')" type="Date" />
+            <Field name="Patient Age" source="Formula: IIF(isNull([Patient Age]), 999, [Patient Age])" type="Int64" />
+            <Field name="LOS" source="Formula: DateTimeDiff([Patient Discharge Date],[Patient Admission Date],'days')" type="Int64" />
+            <Field name="Primary Diagnosis Description" size="100" source="Formula: iif(IsNull([Primary Diagnosis Description]),&quot;MISSING&quot;,[Primary Diagnosis Description])" type="V_String" />
+            <Field name="Admit Diagnosis Description" size="100" source="Formula: iif(IsNull([Admit Diagnosis Description]),&quot;MISSING&quot;,[Admit Diagnosis Description])" type="V_String" />
+            <Field name="Primary Procedure Description" size="100" source="Formula: iif(IsNull([Primary Procedure Description]),&quot;MISSING&quot;,[Primary Procedure Description])" type="V_String" />
+            <Field name="Tile_Num" source="File: C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\Task3Output.yxdb" type="Int32" />
+            <Field name="Tile_SequenceNum" source="File: C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\Task3Output.yxdb" type="Int32" />
+            <Field name="Readmitted" source="Formula: IIF([Tile_SequenceNum]&gt;1,1,0)" type="Int16" />
+            <Field description="Formula: DateTimeDiff([Patient Admission Date],[Row-1:Patient Discharge Date],'days')&#xA;" name="ReadmitDelta" source="Formula: iif([ReadmitDelta]&lt;0,-1,[ReadmitDelta])" type="Int32" />
+            <Field name="Readmit30" source="Formula: IF [Readmitted] = 1 and [ReadmitDelta] &gt;= 0 and [ReadmitDelta] &lt;= 30 THEN 1&#xA;ELSE 0&#xA;ENDIF" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Master Patient ID" selected="True" />
+            <SelectField field="Patient Address Number" selected="True" />
+            <SelectField field="Patient Address Street" selected="True" />
+            <SelectField field="Patient Address Full" selected="True" />
+            <SelectField field="Patient City" selected="True" />
+            <SelectField field="Patient Zip Code" selected="True" />
+            <SelectField field="Patient County" selected="True" />
+            <SelectField field="Patient State" selected="True" />
+            <SelectField field="Patient Country" selected="True" />
+            <SelectField field="Patient Name" selected="True" />
+            <SelectField field="Patient Gender" selected="True" />
+            <SelectField field="Patient LACE Score" selected="True" />
+            <SelectField field="Patient Marital Status" selected="True" />
+            <SelectField field="Patient Primary Language" selected="True" />
+            <SelectField field="Patient Is Citizen Flag" selected="True" />
+            <SelectField field="Patient Is Deceased Flag" selected="True" />
+            <SelectField field="Patient PCP Type" selected="True" />
+            <SelectField field="Patient Ethnicity" selected="True" />
+            <SelectField field="Patient DOB" selected="True" />
+            <SelectField field="Patient Age" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Select Patient Specific Columns</AnnotationText>
+          <DefaultAnnotationText>Select Patient Specific Columns</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="294" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Patient Name</Field>
+          <RegExExpression value="(^[a-z-]+)\s*(.+)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>Patient Name</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="FirstName" type="V_String" size="20" />
+            <Field field="LastName" type="V_String" size="25" />
+          </ParseComplex>
+          <Match>
+            <Field>Master Patient ID_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Parse first and last name from full name (RegEx)</AnnotationText>
+          <DefaultAnnotationText>Parse first and last name from full name (RegEx)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="414" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="LastName" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>LastName - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="534" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Patient Age] &lt; 18 THEN '00 - 17'&#xA;ELSEIF [Patient Age] &lt;26 THEN '18 - 25'&#xA;ELSEIF [Patient Age] &lt;36 THEN '26 - 35'&#xA;ELSEIF [Patient Age] &lt;46 THEN '36 - 45'&#xA;ELSEIF [Patient Age] &lt;56 THEN '46 - 55'&#xA;ELSEIF [Patient Age] &lt;66 THEN '56 - 65'&#xA;ELSEIF [Patient Age] &lt;76 THEN '66 - 75'&#xA;ELSEIF [Patient Age] &lt;86 THEN '76 - 85'&#xA;ELSEIF [Patient Age] &lt;999 THEN '85+'&#xA;ELSE 'Unknown'&#xA;ENDIF&#xA;&#xA;&#xA;&#xA;" field="AgeBracket" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Create age brackets: AgeBracket</AnnotationText>
+          <DefaultAnnotationText>AgeBracket = IF [Patient Age] &lt; 18 THEN '00 - 17'
+ELSEIF [Patient Age] &lt;26 THEN ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="630" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Master Patient ID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Unique record based on Master Patient ID</AnnotationText>
+          <DefaultAnnotationText>Unique Patient ID</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="798" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="AgeBracket" action="GroupBy" rename="AgeBracket" />
+            <SummarizeField field="Master Patient ID" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>QA- Show AgeBracket frequency</AnnotationText>
+          <DefaultAnnotationText>QA- Show AgeBracket frequency</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="786" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="FirstName" selected="False" />
+            <SelectField field="LastName" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Remove first and last name create in step 3</AnnotationText>
+          <DefaultAnnotationText>Remove first and last name create in step 3</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Hospital Name" selected="True" />
+            <SelectField field="Hospital Address Number" selected="True" />
+            <SelectField field="Hospital Address Street" selected="True" />
+            <SelectField field="Hospital Address Full" selected="True" />
+            <SelectField field="Hospital City" selected="True" />
+            <SelectField field="Hospital Zip Code" selected="True" />
+            <SelectField field="Hospital County" selected="True" />
+            <SelectField field="Hospital State" selected="True" />
+            <SelectField field="Hospital Country" selected="True" />
+            <SelectField field="Department Name" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Select Hospital specific columns</AnnotationText>
+          <DefaultAnnotationText>Select Hospital specific columns</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="318" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Hospital Name" order="Ascending" />
+            <Field field="Department Name" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Hospital Name - Ascending
+Department Name - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="438" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Hospital Name" />
+            <Field field="Department Name" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Unique record based on Hospital Name</AnnotationText>
+          <DefaultAnnotationText>Unique Hospital Name</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="906" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\randa\AppData\Local\Temp\Engine_17040_e65f335014ad45df9d5fa448b6c792a3_\Engine_6212_b88260e5bd3f47c28d43a2a9a3cbd1d4_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="582" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\randa\AppData\Local\Temp\Engine_17040_e65f335014ad45df9d5fa448b6c792a3_\Engine_6212_bab9480888c54eb08d7e38d6665320be_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Unique" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Unique" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Unique" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>M5- Task4 V1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

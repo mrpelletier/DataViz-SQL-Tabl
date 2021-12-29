@@ -1,0 +1,1243 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">\\Mac\Home\Desktop\Task 3 Output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Task 3 Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Admit Diagnosis Description" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="Age" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_]) (BatchMacro)" type="Int16" />
+            <Field name="Department Name" size="24" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Full" size="19" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Number" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Hospitals.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+            <Field name="Hospital Address Street" size="15" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital City" size="12" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Hospital Country" size="2" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Hospital County" size="12" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Hospital Name" size="30" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital State" size="2" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Hospital Zip Code" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Hospitals.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+            <Field name="HRRP Condition" size="7" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="LOS" source="Formula: DateTimeDiff([Patient Discharge Date],[Patient Admission Date],&quot;days&quot;) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Master Patient ID" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Encounters.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Patient Address Full" size="37" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Address Number" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Patients.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+            <Field name="Patient Address Street" size="32" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Admission Date" source="DateTime: To MM/dd/yyyy (BatchMacro) (BatchMacro) (BatchMacro)" type="Date" />
+            <Field name="Patient City" size="20" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Country" size="2" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient County" size="12" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Discharge Date" source="DateTime: To MM/dd/yyyy (BatchMacro) (BatchMacro) (BatchMacro)" type="Date" />
+            <Field name="Patient DOB Date" source="DateTime: To MM/dd/yyyy (BatchMacro) (BatchMacro) (BatchMacro)" type="Date" />
+            <Field name="Patient Ethnicity" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Gender" size="6" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient InICU Flag" size="3" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Is Citizen Flag" size="1" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Is Deceased Flag" size="1" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient LACE Score" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Patients.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Patient Marital Status" size="7" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Name" size="26" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient PCP Type" size="1" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Primary Language" size="13" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient State" size="2" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Zip Code" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Patients.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+            <Field name="Primary Diagnosis Description" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="Primary Payor ID" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Accounts.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Specialty Description" size="23" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Total Account Adjustment $" source="Formula: ToNumber(Replace(_CurrentField_, ',', '')) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Total Account Balance $" source="Formula: ToNumber(Replace(_CurrentField_, ',', '')) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Total Account Charge $" source="Formula: ToNumber(Replace(_CurrentField_, ',', '')) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Total Account Payment $" source="Formula: ToNumber(Replace(_CurrentField_, ',', '')) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Admit ICD Diangosis Code" size="6" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Primary Procedure Description" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field description="Formula: [Row-1:VisitSeq]+1" name="VisitSeq" source="Formula: [Row-1:VisitSeq]+1" type="Int32" />
+            <Field name="Readmission" source="Formula: IF [VisitSeq] &gt; 1 THEN 1 ELSE 0 ENDIF" type="Int16" />
+            <Field description="Formula: IIF([Readmission], DateTimeDiff([Patient Admission Date],[Row-1:Patient Discharge Date],'days'), 0)" name="ReadmitDelta" source="Formula: IIF([Readmission], DateTimeDiff([Patient Admission Date],[Row-1:Patient Discharge Date],'days'), 0)" type="Int32" />
+            <Field name="R30" source="Formula: IF ([ReadmitDelta]&lt;=30 and [Readmission]=1) THEN 1 ELSE 0 ENDIF" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select medicare_dw.calendar_dim.* 
+from medicare_dw.calendar_dim</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>calendar_dim</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select medicare_dw.calendar_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="CalendarKey" source="File: aka:MySQL|||select medicare_dw.calendar_dim.* &#xA;from medicare_dw.calendar_dim" type="Int32" />
+            <Field name="FullDate" source="File: aka:MySQL|||select medicare_dw.calendar_dim.* &#xA;from medicare_dw.calendar_dim" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="222" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Patient Admission Date" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="FullDate" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Admit Diagnosis Description" selected="True" input="Left_" />
+                <SelectField field="Left_Age" selected="True" input="Left_" />
+                <SelectField field="Left_Department Name" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital City" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Country" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital County" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Name" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital State" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_HRRP Condition" selected="True" input="Left_" />
+                <SelectField field="Left_LOS" selected="True" input="Left_" />
+                <SelectField field="Left_Master Patient ID" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Patient City" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Country" selected="True" input="Left_" />
+                <SelectField field="Left_Patient County" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Discharge Date" selected="True" input="Left_" />
+                <SelectField field="Left_Patient DOB Date" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Ethnicity" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Patient InICU Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Citizen Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Deceased Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient LACE Score" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Marital Status" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Name" selected="True" input="Left_" />
+                <SelectField field="Left_Patient PCP Type" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Primary Language" selected="True" input="Left_" />
+                <SelectField field="Left_Patient State" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Diagnosis Description" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Payor ID" selected="True" input="Left_" />
+                <SelectField field="Left_Specialty Description" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Adjustment $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Balance $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Charge $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Payment $" selected="True" input="Left_" />
+                <SelectField field="Left_Admit ICD Diangosis Code" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Procedure Description" selected="True" input="Left_" />
+                <SelectField field="Left_VisitSeq" selected="True" input="Left_" />
+                <SelectField field="Left_Readmission" selected="True" input="Left_" />
+                <SelectField field="Left_ReadmitDelta" selected="True" input="Left_" />
+                <SelectField field="Left_R30" selected="True" input="Left_" />
+                <SelectField field="Right_CalendarKey" selected="True" input="Right_" />
+                <SelectField field="Right_Patient Admission Date" selected="False" rename="Right_Patient Admission Date" input="Right_" />
+                <SelectField field="Right_Patient Discharge Date" selected="False" rename="Right_Patient Discharge Date" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="378" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Department Name" />
+            <Field field="Specialty Description" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Department Name" />
+            <Field field="Specialty Description" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Admit Diagnosis Description" selected="True" input="Left_" />
+                <SelectField field="Left_Age" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital City" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Country" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital County" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Name" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital State" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_HRRP Condition" selected="True" input="Left_" />
+                <SelectField field="Left_LOS" selected="True" input="Left_" />
+                <SelectField field="Left_Master Patient ID" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Patient City" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Country" selected="True" input="Left_" />
+                <SelectField field="Left_Patient County" selected="True" input="Left_" />
+                <SelectField field="Left_Patient DOB Date" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Ethnicity" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Patient InICU Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Citizen Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Deceased Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient LACE Score" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Marital Status" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Name" selected="True" input="Left_" />
+                <SelectField field="Left_Patient PCP Type" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Primary Language" selected="True" input="Left_" />
+                <SelectField field="Left_Patient State" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Diagnosis Description" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Payor ID" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Adjustment $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Balance $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Charge $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Payment $" selected="True" input="Left_" />
+                <SelectField field="Left_Admit ICD Diangosis Code" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Procedure Description" selected="True" input="Left_" />
+                <SelectField field="Left_VisitSeq" selected="True" input="Left_" />
+                <SelectField field="Left_Readmission" selected="True" input="Left_" />
+                <SelectField field="Left_ReadmitDelta" selected="True" input="Left_" />
+                <SelectField field="Left_R30" selected="True" input="Left_" />
+                <SelectField field="Left_AdmitCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_DiscCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Right_DepartmentKey" selected="True" input="Right_" />
+                <SelectField field="Right_Department Name" selected="False" rename="Right_Department Name" input="Right_" />
+                <SelectField field="Right_Specialty Description" selected="False" rename="Right_Specialty Description" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="306" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select medicare_dw.department_dim.* 
+from medicare_dw.department_dim</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>department_dim</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select medicare_dw.departmen...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="DepartmentKey" source="File: aka:MySQL|||select medicare_dw.department_dim.* &#xA;from medicare_dw.department_dim" type="Int32" />
+            <Field name="Department Name" size="24" source="File: aka:MySQL|||select medicare_dw.department_dim.* &#xA;from medicare_dw.department_dim" type="V_String" />
+            <Field name="Specialty Description" size="23" source="File: aka:MySQL|||select medicare_dw.department_dim.* &#xA;from medicare_dw.department_dim" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="462" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Admit Diagnosis Description" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DiagnosisDescription" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Age" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital City" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Country" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital County" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Name" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital State" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_HRRP Condition" selected="True" input="Left_" />
+                <SelectField field="Left_LOS" selected="True" input="Left_" />
+                <SelectField field="Left_Master Patient ID" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Patient City" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Country" selected="True" input="Left_" />
+                <SelectField field="Left_Patient County" selected="True" input="Left_" />
+                <SelectField field="Left_Patient DOB Date" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Ethnicity" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Patient InICU Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Citizen Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Deceased Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient LACE Score" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Marital Status" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Name" selected="True" input="Left_" />
+                <SelectField field="Left_Patient PCP Type" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Primary Language" selected="True" input="Left_" />
+                <SelectField field="Left_Patient State" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Diagnosis Description" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Payor ID" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Adjustment $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Balance $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Charge $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Payment $" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Procedure Description" selected="True" input="Left_" />
+                <SelectField field="Left_VisitSeq" selected="True" input="Left_" />
+                <SelectField field="Left_Readmission" selected="True" input="Left_" />
+                <SelectField field="Left_ReadmitDelta" selected="True" input="Left_" />
+                <SelectField field="Left_R30" selected="True" input="Left_" />
+                <SelectField field="Left_AdmitCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_DiscCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_DepartmentKey" selected="True" input="Left_" />
+                <SelectField field="Right_DiagnosisKey" selected="True" input="Right_" />
+                <SelectField field="Left_CalendarKey" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="318" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select medicare_dw.diagnosis_dim.* 
+from medicare_dw.diagnosis_dim</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>diagnosis_dim</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select medicare_dw.diagnosis...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="DiagnosisKey" source="File: aka:MySQL|||select medicare_dw.diagnosis_dim.* &#xA;from medicare_dw.diagnosis_dim" type="Int32" />
+            <Field name="DiagnosisDescription" size="16777216" source="File: aka:MySQL|||select medicare_dw.diagnosis_dim.* &#xA;from medicare_dw.diagnosis_dim" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="630" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Hospital Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Hospital Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Age" selected="True" input="Left_" />
+                <SelectField field="Left_HRRP Condition" selected="True" input="Left_" />
+                <SelectField field="Left_LOS" selected="True" input="Left_" />
+                <SelectField field="Left_Master Patient ID" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Patient City" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Country" selected="True" input="Left_" />
+                <SelectField field="Left_Patient County" selected="True" input="Left_" />
+                <SelectField field="Left_Patient DOB Date" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Ethnicity" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Patient InICU Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Citizen Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Deceased Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient LACE Score" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Marital Status" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Name" selected="True" input="Left_" />
+                <SelectField field="Left_Patient PCP Type" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Primary Language" selected="True" input="Left_" />
+                <SelectField field="Left_Patient State" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Payor ID" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Procedure Description" selected="True" input="Left_" />
+                <SelectField field="Left_Readmission" selected="True" input="Left_" />
+                <SelectField field="Left_ReadmitDelta" selected="True" input="Left_" />
+                <SelectField field="Left_R30" selected="True" input="Left_" />
+                <SelectField field="Left_AdmitCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_DiscCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_DepartmentKey" selected="True" input="Left_" />
+                <SelectField field="Left_AdmitDiagKey" selected="True" input="Left_" />
+                <SelectField field="Left_PrimaryDiagKey" selected="True" input="Left_" />
+                <SelectField field="Right_HospitalKey" selected="True" input="Right_" />
+                <SelectField field="Right_Hospital Name" selected="False" rename="Right_Hospital Name" input="Right_" />
+                <SelectField field="Right_Hospital City" selected="False" rename="Right_Hospital City" input="Right_" />
+                <SelectField field="Right_Hospital County" selected="False" rename="Right_Hospital County" input="Right_" />
+                <SelectField field="Right_Hospital State" selected="False" rename="Right_Hospital State" input="Right_" />
+                <SelectField field="Right_Hospital Zip Code" selected="False" rename="Right_Hospital Zip Code" input="Right_" />
+                <SelectField field="Right_Hospital Address Full" selected="False" rename="Right_Hospital Address Full" input="Right_" />
+                <SelectField field="Right_Hospital Address Number" selected="False" rename="Right_Hospital Address Number" input="Right_" />
+                <SelectField field="Right_Hospital Address Street" selected="False" rename="Right_Hospital Address Street" input="Right_" />
+                <SelectField field="Right_Hospital Country" selected="False" rename="Right_Hospital Country" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="594" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select medicare_dw.hospital_dim.HospitalKey,
+	medicare_dw.hospital_dim.`Hospital Name` 
+from medicare_dw.hospital_dim</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>hospital_dim</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select medicare_dw.hospital_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="HospitalKey" source="File: aka:MySQL|||select medicare_dw.hospital_dim.HospitalKey,&#xA;	medicare_dw.hospital_dim.`Hospital Name` &#xA;from medicare_dw.hospital_dim" type="Int32" />
+            <Field name="Hospital Name" size="30" source="File: aka:MySQL|||select medicare_dw.hospital_dim.HospitalKey,&#xA;	medicare_dw.hospital_dim.`Hospital Name` &#xA;from medicare_dw.hospital_dim" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="702" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Primary Procedure Description" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Primary Procedure Description" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Age" selected="True" input="Left_" />
+                <SelectField field="Left_HRRP Condition" selected="True" input="Left_" />
+                <SelectField field="Left_LOS" selected="True" input="Left_" />
+                <SelectField field="Left_Master Patient ID" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Patient City" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Country" selected="True" input="Left_" />
+                <SelectField field="Left_Patient County" selected="True" input="Left_" />
+                <SelectField field="Left_Patient DOB Date" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Ethnicity" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Patient InICU Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Citizen Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Deceased Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient LACE Score" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Marital Status" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Name" selected="True" input="Left_" />
+                <SelectField field="Left_Patient PCP Type" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Primary Language" selected="True" input="Left_" />
+                <SelectField field="Left_Patient State" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Payor ID" selected="True" input="Left_" />
+                <SelectField field="Left_Readmission" selected="True" input="Left_" />
+                <SelectField field="Left_ReadmitDelta" selected="True" input="Left_" />
+                <SelectField field="Left_R30" selected="True" input="Left_" />
+                <SelectField field="Left_AdmitCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_DiscCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_DepartmentKey" selected="True" input="Left_" />
+                <SelectField field="Left_AdmitDiagKey" selected="True" input="Left_" />
+                <SelectField field="Left_PrimaryDiagKey" selected="True" input="Left_" />
+                <SelectField field="Left_HospitalKey" selected="True" input="Left_" />
+                <SelectField field="Right_ProcedureKey" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="690" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select medicare_dw.procedure_dim.* 
+from medicare_dw.procedure_dim</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>procedure_dim</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select medicare_dw.procedure...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="ProcedureKey" source="File: aka:MySQL|||select medicare_dw.procedure_dim.* &#xA;from medicare_dw.procedure_dim" type="Int32" />
+            <Field name="Primary Procedure Description" size="16777216" source="File: aka:MySQL|||select medicare_dw.procedure_dim.* &#xA;from medicare_dw.procedure_dim" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="858" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Master Patient ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Master Patient ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Age" selected="False" input="Left_" />
+                <SelectField field="Left_Master Patient ID" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Address Full" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Address Number" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Address Street" selected="False" input="Left_" />
+                <SelectField field="Left_Patient City" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Country" selected="False" input="Left_" />
+                <SelectField field="Left_Patient County" selected="False" input="Left_" />
+                <SelectField field="Left_Patient DOB Date" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Ethnicity" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Gender" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Is Citizen Flag" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Is Deceased Flag" selected="False" input="Left_" />
+                <SelectField field="Left_Patient LACE Score" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Marital Status" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Name" selected="False" input="Left_" />
+                <SelectField field="Left_Patient PCP Type" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Primary Language" selected="False" input="Left_" />
+                <SelectField field="Left_Patient State" selected="False" input="Left_" />
+                <SelectField field="Left_Patient Zip Code" selected="False" input="Left_" />
+                <SelectField field="Left_Primary Payor ID" selected="False" input="Left_" />
+                <SelectField field="Left_AdmitCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_DiscCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_DepartmentKey" selected="True" input="Left_" />
+                <SelectField field="Left_AdmitDiagKey" selected="True" input="Left_" />
+                <SelectField field="Left_PrimaryDiagKey" selected="True" input="Left_" />
+                <SelectField field="Left_HospitalKey" selected="True" input="Left_" />
+                <SelectField field="Left_ProcedureKey" selected="True" input="Left_" />
+                <SelectField field="Right_PatientKey" selected="True" input="Right_" />
+                <SelectField field="Left_ReadmitDelta" selected="True" input="Left_" />
+                <SelectField field="Left_R30" selected="True" input="Left_" />
+                <SelectField field="Left_Readmission" selected="True" input="Left_" />
+                <SelectField field="Left_HRRP Condition" selected="True" input="Left_" />
+                <SelectField field="Left_LOS" selected="True" input="Left_" />
+                <SelectField field="Left_Patient InICU Flag" selected="True" input="Left_" />
+                <SelectField field="Right_Master Patient ID" selected="False" rename="Right_Master Patient ID" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="774" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select medicare_dw.patient_dim.PatientKey,
+	medicare_dw.patient_dim.`Master Patient ID` 
+from medicare_dw.patient_dim</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>patient_dim</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select medicare_dw.patient_d...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="PatientKey" source="File: aka:MySQL|||select medicare_dw.patient_dim.PatientKey,&#xA;	medicare_dw.patient_dim.`Master Patient ID` &#xA;from medicare_dw.patient_dim" type="Int32" />
+            <Field name="Master Patient ID" source="File: aka:MySQL|||select medicare_dw.patient_dim.PatientKey,&#xA;	medicare_dw.patient_dim.`Master Patient ID` &#xA;from medicare_dw.patient_dim" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1026" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||fact_readmission</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `medicare_dw`.`fact_readmission` 
+DROP PRIMARY KEY,
+ADD PRIMARY KEY (`AdmitCalendarKey`, `DiscCalendarKey`, `DepartmentKey`, `AdmitDiagKey`, `PrimaryDiagKey`, `HospitalKey`, `ProcedureKey`, `PatientKey`, `RecordID`);
+;
+
+
+ALTER TABLE `medicare_dw`.`fact_readmission` 
+ADD INDEX `bcalfk_idx` (`DiscCalendarKey` ASC) VISIBLE,
+ADD INDEX `adiagfk_idx` (`AdmitDiagKey` ASC) VISIBLE;
+;
+ALTER TABLE `medicare_dw`.`fact_readmission` 
+ADD CONSTRAINT `acalfk`
+  FOREIGN KEY (`AdmitCalendarKey`)
+  REFERENCES `medicare_dw`.`calendar_dim` (`CalendarKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `bcalfk`
+  FOREIGN KEY (`DiscCalendarKey`)
+  REFERENCES `medicare_dw`.`calendar_dim` (`CalendarKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `adiagfk`
+  FOREIGN KEY (`AdmitDiagKey`)
+  REFERENCES `medicare_dw`.`diagnosis_dim` (`DiagnosisKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `bdiagfk`
+  FOREIGN KEY (`PrimaryDiagKey`)
+  REFERENCES `medicare_dw`.`diagnosis_dim` (`DiagnosisKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `hosfk`
+  FOREIGN KEY (`HospitalKey`)
+  REFERENCES `medicare_dw`.`hospital_dim` (`HospitalKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `patfk`
+  FOREIGN KEY (`PatientKey`)
+  REFERENCES `medicare_dw`.`patient_dim` (`PatientKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `profk`
+  FOREIGN KEY (`ProcedureKey`)
+  REFERENCES `medicare_dw`.`procedure_dim` (`ProcedureKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `deptfk`
+  FOREIGN KEY (`DepartmentKey`)
+  REFERENCES `medicare_dw`.`department_dim` (`DepartmentKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL><![CDATA[use medicare_dw; 
+DROP TABLE IF EXISTS fact_readmission; ]]></PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Write a new fact_readmission table to medicare_dw</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=fact_readmission</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="138" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CalendarKey" selected="True" />
+            <SelectField field="FullDate" selected="True" type="Date" size="10" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="138" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CalendarKey" selected="True" />
+            <SelectField field="FullDate" selected="True" type="Date" size="10" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="270" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Patient Discharge Date" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="FullDate" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Admit Diagnosis Description" selected="True" input="Left_" />
+                <SelectField field="Left_Age" selected="True" input="Left_" />
+                <SelectField field="Left_Department Name" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital City" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Country" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital County" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Name" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital State" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_HRRP Condition" selected="True" input="Left_" />
+                <SelectField field="Left_LOS" selected="True" input="Left_" />
+                <SelectField field="Left_Master Patient ID" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Patient City" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Country" selected="True" input="Left_" />
+                <SelectField field="Left_Patient County" selected="True" input="Left_" />
+                <SelectField field="Left_Patient DOB Date" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Ethnicity" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Patient InICU Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Citizen Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Deceased Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient LACE Score" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Marital Status" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Name" selected="True" input="Left_" />
+                <SelectField field="Left_Patient PCP Type" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Primary Language" selected="True" input="Left_" />
+                <SelectField field="Left_Patient State" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Diagnosis Description" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Payor ID" selected="True" input="Left_" />
+                <SelectField field="Left_Specialty Description" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Adjustment $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Balance $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Charge $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Payment $" selected="True" input="Left_" />
+                <SelectField field="Left_Admit ICD Diangosis Code" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Procedure Description" selected="True" input="Left_" />
+                <SelectField field="Left_VisitSeq" selected="True" input="Left_" />
+                <SelectField field="Left_Readmission" selected="True" input="Left_" />
+                <SelectField field="Left_ReadmitDelta" selected="True" input="Left_" />
+                <SelectField field="Left_R30" selected="True" input="Left_" />
+                <SelectField field="Left_CalendarKey" selected="True" rename="AdmitCalendarKey" input="Left_" />
+                <SelectField field="Right_CalendarKey" selected="True" rename="DiscCalendarKey" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="414" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DiagnosisKey" selected="True" />
+            <SelectField field="DiagnosisDescription" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="534" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Primary Diagnosis Description" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DiagnosisDescription" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Age" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital City" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Country" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital County" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Name" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital State" selected="True" input="Left_" />
+                <SelectField field="Left_Hospital Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_HRRP Condition" selected="True" input="Left_" />
+                <SelectField field="Left_LOS" selected="True" input="Left_" />
+                <SelectField field="Left_Master Patient ID" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Full" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Number" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Address Street" selected="True" input="Left_" />
+                <SelectField field="Left_Patient City" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Country" selected="True" input="Left_" />
+                <SelectField field="Left_Patient County" selected="True" input="Left_" />
+                <SelectField field="Left_Patient DOB Date" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Ethnicity" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Patient InICU Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Citizen Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Is Deceased Flag" selected="True" input="Left_" />
+                <SelectField field="Left_Patient LACE Score" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Marital Status" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Name" selected="True" input="Left_" />
+                <SelectField field="Left_Patient PCP Type" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Primary Language" selected="True" input="Left_" />
+                <SelectField field="Left_Patient State" selected="True" input="Left_" />
+                <SelectField field="Left_Patient Zip Code" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Payor ID" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Adjustment $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Balance $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Charge $" selected="True" input="Left_" />
+                <SelectField field="Left_Total Account Payment $" selected="True" input="Left_" />
+                <SelectField field="Left_Primary Procedure Description" selected="True" input="Left_" />
+                <SelectField field="Left_VisitSeq" selected="True" input="Left_" />
+                <SelectField field="Left_Readmission" selected="True" input="Left_" />
+                <SelectField field="Left_ReadmitDelta" selected="True" input="Left_" />
+                <SelectField field="Left_R30" selected="True" input="Left_" />
+                <SelectField field="Left_AdmitCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_DiscCalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_DepartmentKey" selected="True" input="Left_" />
+                <SelectField field="Left_DiagnosisKey" selected="True" rename="AdmitDiagKey" input="Left_" />
+                <SelectField field="Right_DiagnosisKey" selected="True" rename="PrimaryDiagKey" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DiagnosisKey" selected="True" />
+            <SelectField field="DiagnosisDescription" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="942" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="20" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="20" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Join" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>M6-medicare-fact</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,849 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">\\Mac\Home\Desktop\Task 3 Output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Task 3 Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Admit Diagnosis Description" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="Age" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_]) (BatchMacro)" type="Int16" />
+            <Field name="Department Name" size="24" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Full" size="19" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Number" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Hospitals.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+            <Field name="Hospital Address Street" size="15" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital City" size="12" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Hospital Country" size="2" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Hospital County" size="12" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Hospital Name" size="30" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital State" size="2" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Hospital Zip Code" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Hospitals.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+            <Field name="HRRP Condition" size="7" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="LOS" source="Formula: DateTimeDiff([Patient Discharge Date],[Patient Admission Date],&quot;days&quot;) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Master Patient ID" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Encounters.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Patient Address Full" size="37" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Address Number" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Patients.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+            <Field name="Patient Address Street" size="32" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Admission Date" source="DateTime: To MM/dd/yyyy (BatchMacro) (BatchMacro) (BatchMacro)" type="Date" />
+            <Field name="Patient City" size="20" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Country" size="2" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient County" size="12" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Discharge Date" source="DateTime: To MM/dd/yyyy (BatchMacro) (BatchMacro) (BatchMacro)" type="Date" />
+            <Field name="Patient DOB Date" source="DateTime: To MM/dd/yyyy (BatchMacro) (BatchMacro) (BatchMacro)" type="Date" />
+            <Field name="Patient Ethnicity" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Gender" size="6" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient InICU Flag" size="3" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Is Citizen Flag" size="1" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Is Deceased Flag" size="1" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient LACE Score" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Patients.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Patient Marital Status" size="7" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Name" size="26" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient PCP Type" size="1" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Primary Language" size="13" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient State" size="2" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Patient Zip Code" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Patients.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+            <Field name="Primary Diagnosis Description" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field name="Primary Payor ID" source="File: C:\Users\mtrem\Dropbox\W&amp;M\Teaching WM\Online Database Course\Module 5\Group Assignment Challenges\Blending_EHR.Accounts.csv (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Specialty Description" size="23" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Total Account Adjustment $" source="Formula: ToNumber(Replace(_CurrentField_, ',', '')) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Total Account Balance $" source="Formula: ToNumber(Replace(_CurrentField_, ',', '')) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Total Account Charge $" source="Formula: ToNumber(Replace(_CurrentField_, ',', '')) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Total Account Payment $" source="Formula: ToNumber(Replace(_CurrentField_, ',', '')) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Admit ICD Diangosis Code" size="6" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Primary Procedure Description" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+            <Field description="Formula: [Row-1:VisitSeq]+1" name="VisitSeq" source="Formula: [Row-1:VisitSeq]+1" type="Int32" />
+            <Field name="Readmission" source="Formula: IF [VisitSeq] &gt; 1 THEN 1 ELSE 0 ENDIF" type="Int16" />
+            <Field description="Formula: IIF([Readmission], DateTimeDiff([Patient Admission Date],[Row-1:Patient Discharge Date],'days'), 0)" name="ReadmitDelta" source="Formula: IIF([Readmission], DateTimeDiff([Patient Admission Date],[Row-1:Patient Discharge Date],'days'), 0)" type="Int32" />
+            <Field name="R30" source="Formula: IF ([ReadmitDelta]&lt;=30 and [Readmission]=1) THEN 1 ELSE 0 ENDIF" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Patient Admission Date" selected="True" />
+            <SelectField field="Patient Discharge Date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[select admission and discharge date fields ]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[select admission and discharge date fields ]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="282" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Patient Admission Date" />
+            <Field field="Patient Discharge Date" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select unique admission/discharge dates</AnnotationText>
+          <DefaultAnnotationText>Select unique admission/discharge dates</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="402" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>CalendarKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>create surrogate key: CalendarKey</AnnotationText>
+          <DefaultAnnotationText>create surrogate key: CalendarKey</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="522" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||calendar_dim</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `medicare_dw`.`calendar_dim` 
+CHANGE COLUMN `CalendarKey` `CalendarKey` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`CalendarKey`);
+;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL>use medicare_dw;
+DROP TABLE IF EXISTS calendar_dim;</PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Write calendar_dim to medicare_dw</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=calendar_dim</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="114" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Hospital Address Full" selected="True" />
+            <SelectField field="Hospital Address Number" selected="True" />
+            <SelectField field="Hospital Address Street" selected="True" />
+            <SelectField field="Hospital City" selected="True" />
+            <SelectField field="Hospital Country" selected="True" />
+            <SelectField field="Hospital County" selected="True" />
+            <SelectField field="Hospital Name" selected="True" />
+            <SelectField field="Hospital State" selected="True" />
+            <SelectField field="Hospital Zip Code" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select hospital attribute fields</AnnotationText>
+          <DefaultAnnotationText>select hospital attribute fields</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="222" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>HospitalKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>create surrogate key: HospitalKey</AnnotationText>
+          <DefaultAnnotationText>create surrogate key: HospitalKey</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="438" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||hospital_dim</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `medicare_dw`.`hospital_dim` 
+CHANGE COLUMN `HospitalKey` `HospitalKey` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`HospitalKey`);
+;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL>use medicare_dw;
+DROP TABLE IF EXISTS hospital_dim;</PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Write hospital_dim to medicare_dw</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=hospital_dim</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="330" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Hospital Name" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[select unique hospitals ]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[select unique hospitals ]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="66" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Department Name" selected="True" />
+            <SelectField field="Specialty Description" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select department attribute fields</AnnotationText>
+          <DefaultAnnotationText>select department attribute fields</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="174" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Department Name" />
+            <Field field="Specialty Description" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select unique department/speciality combo</AnnotationText>
+          <DefaultAnnotationText>select unique department/speciality combo</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="426" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||department_dim</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `medicare_dw`.`department_dim` 
+CHANGE COLUMN `DepartmentKey` `DepartmentKey` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`DepartmentKey`);
+;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL>use medicare_dw;
+DROP TABLE IF EXISTS department_dim;</PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Write department_dim to medicare_dw</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=department_dim</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="294" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>DepartmentKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>create surrogate key: DepartmentKey</AnnotationText>
+          <DefaultAnnotationText>create surrogate key: DepartmentKey</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="42" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Primary Procedure Description" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select procedure desc field</AnnotationText>
+          <DefaultAnnotationText>select procedure desc field</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="150" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Primary Procedure Description" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select unique procedures</AnnotationText>
+          <DefaultAnnotationText>select unique procedures</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="270" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ProcedureKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>create surrogate key: ProcedureKey</AnnotationText>
+          <DefaultAnnotationText>create surrogate key: ProcedureKey</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="438" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||procedure_dim</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `medicare_dw`.`procedure_dim` 
+CHANGE COLUMN `ProcedureKey` `ProcedureKey` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`ProcedureKey`);
+;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL><![CDATA[use medicare_dw; 
+DROP TABLE IF EXISTS procedure_dim; ]]></PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Write procedure_dim to medicare_dw</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=procedure_dim</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="30" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Admit Diagnosis Description" selected="True" rename="AdmitDiagnosisDesc" />
+            <SelectField field="Primary Diagnosis Description" selected="True" rename="PrimaryDiagnosisDesc" />
+            <SelectField field="Admit ICD Diangosis Code" selected="True" rename="AdmitDiagnosisCode" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select diagnosis attribute fields</AnnotationText>
+          <DefaultAnnotationText>select diagnosis attribute fields</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="150" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="AdmitDiagnosisDesc" />
+            <Field field="PrimaryDiagnosisDesc" />
+            <Field field="AdmitDiagnosisCode" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select unique admit desc, primary diag desc, and diag code</AnnotationText>
+          <DefaultAnnotationText>select unique admit desc, primary diag desc, and diag code</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="258" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>AdmitDiagnosisKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>create surrogate key: AdmitDiagnosisKey</AnnotationText>
+          <DefaultAnnotationText>create surrogate key: DiagnosisKey</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="498" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||diagnosis_dim</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `medicare_dw`.`diagnosis_dim` 
+CHANGE COLUMN `PrimaryDiagnosisKey` `PrimaryDiagnosisKey` INT(11) NOT NULL ,
+CHANGE COLUMN `AdmitDiagnosisKey` `AdmitDiagnosisKey` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`PrimaryDiagnosisKey`, `AdmitDiagnosisKey`);
+;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL><![CDATA[use medicare_dw;
+DROP TABLE IF EXISTS diagnosis_dim; ]]></PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Write diagnosis_dim to medicare_dw</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=diagnosis_dim</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="30" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Age" selected="True" />
+            <SelectField field="Master Patient ID" selected="True" />
+            <SelectField field="Patient City" selected="True" />
+            <SelectField field="Patient County" selected="True" />
+            <SelectField field="Patient DOB Date" selected="True" />
+            <SelectField field="Patient Ethnicity" selected="True" />
+            <SelectField field="Patient Gender" selected="True" />
+            <SelectField field="Patient Is Citizen Flag" selected="True" />
+            <SelectField field="Patient Is Deceased Flag" selected="True" />
+            <SelectField field="Patient LACE Score" selected="True" />
+            <SelectField field="Patient Marital Status" selected="True" />
+            <SelectField field="Patient Name" selected="True" />
+            <SelectField field="Patient PCP Type" selected="True" />
+            <SelectField field="Patient Primary Language" selected="True" />
+            <SelectField field="Patient State" selected="True" />
+            <SelectField field="Patient Zip Code" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select patient attributes fields</AnnotationText>
+          <DefaultAnnotationText>select patient attributes fields</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="162" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>PatientKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>create surrogate key: PatientKey</AnnotationText>
+          <DefaultAnnotationText>create surrogate key: PatientKey</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="282" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||patient_dim</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `medicare_dw`.`patient_dim` 
+CHANGE COLUMN `PatientKey` `PatientKey` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`PatientKey`);
+;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL>use medicare_dw; 
+DROP TABLE IF EXISTS patient_dim;</PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Write patient_dim to medicare_dw</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=patient_dim</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="378" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>PrimaryDiagnosisKey</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>create surrogate key: PrimaryDiagnosisKey</AnnotationText>
+          <DefaultAnnotationText>create surrogate key: PrimaryDiagnosisKey</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Unique" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Unique" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Unique" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Unique" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Unique" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>M6-medicare-dims</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

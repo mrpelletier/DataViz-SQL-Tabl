@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\Task3Output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Task3Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Master Patient ID" size="15" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient InICU Flag" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Address Number" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Address Street" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Address Full" size="65" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient City" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Zip Code" size="12" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient County" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient State" size="2" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Country" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Name" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Gender" size="1" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient LACE Score" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="Patient Marital Status" size="15" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Primary Language" size="20" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Is Citizen Flag" size="1" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Is Deceased Flag" size="1" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient PCP Type" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Patient Ethnicity" size="35" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Name" size="65" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Number" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Street" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Address Full" size="65" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital City" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Zip Code" size="12" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital County" size="45" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital State" size="2" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Hospital Country" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Department Name" size="55" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Specialty Description" size="25" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Primary ICD Diagnosis Code" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Admit ICD Diangosis Code" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Primary ICD Procedure Code" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Primary Payor ID" size="10" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Total Account Balance $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="Total Account Adjustment $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="Total Account Charge $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="Total Account Payment $" source="Formula: [_CurrentField_]" type="Float" />
+            <Field name="HRRP Condition" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Patient Admission Date" source="Formula: DateTimeParse([_CurrentField_],'%m-%d-%Y')" type="Date" />
+            <Field name="Patient Discharge Date" source="Formula: DateTimeParse([_CurrentField_],'%m-%d-%Y')" type="Date" />
+            <Field name="Patient DOB" source="Formula: DateTimeParse([_CurrentField_],'%m-%d-%Y')" type="Date" />
+            <Field name="Patient Age" source="Formula: IIF(isNull([Patient Age]), 999, [Patient Age])" type="Int64" />
+            <Field name="LOS" source="Formula: DateTimeDiff([Patient Discharge Date],[Patient Admission Date],'days')" type="Int64" />
+            <Field name="Primary Diagnosis Description" size="100" source="Formula: iif(IsNull([Primary Diagnosis Description]),&quot;MISSING&quot;,[Primary Diagnosis Description])" type="V_String" />
+            <Field name="Admit Diagnosis Description" size="100" source="Formula: iif(IsNull([Admit Diagnosis Description]),&quot;MISSING&quot;,[Admit Diagnosis Description])" type="V_String" />
+            <Field name="Primary Procedure Description" size="100" source="Formula: iif(IsNull([Primary Procedure Description]),&quot;MISSING&quot;,[Primary Procedure Description])" type="V_String" />
+            <Field name="Tile_Num" source="File: C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\Task3Output.yxdb" type="Int32" />
+            <Field name="Tile_SequenceNum" source="File: C:\Users\randa\Documents\Projects\W&amp;M\Db Systems\M5\Task3Output.yxdb" type="Int32" />
+            <Field name="Readmitted" source="Formula: IIF([Tile_SequenceNum]&gt;1,1,0)" type="Int16" />
+            <Field description="Formula: DateTimeDiff([Patient Admission Date],[Row-1:Patient Discharge Date],'days')&#xA;" name="ReadmitDelta" source="Formula: iif([ReadmitDelta]&lt;0,-1,[ReadmitDelta])" type="Int32" />
+            <Field name="Readmit30" source="Formula: IF [Readmitted] = 1 and [ReadmitDelta] &gt;= 0 and [ReadmitDelta] &lt;= 30 THEN 1&#xA;ELSE 0&#xA;ENDIF" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Hospital Name" selected="True" />
+            <SelectField field="Department Name" selected="True" />
+            <SelectField field="Readmitted" selected="True" />
+            <SelectField field="Readmit30" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Select Hospital Name, Department, Readmissions, and Readmissions &lt;= 30 Days</AnnotationText>
+          <DefaultAnnotationText>Select Hospital Name, Department, Readmissions, and Readmissions &lt;= 30 Days</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="366" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Hospital Name" action="GroupBy" rename="Hospital Name" />
+            <SummarizeField field="Department Name" action="GroupBy" rename="Department Name" />
+            <SummarizeField field="Readmitted" action="Count" rename="Number of Admissions" />
+            <SummarizeField field="Readmitted" action="Sum" rename="Sum of all Readmissions" />
+            <SummarizeField field="Readmit30" action="Sum" rename="Sum of R30 Readmissions" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Create summary of admissions, readmissions, and readmissions &lt;= 30 by Hospital Name and department</AnnotationText>
+          <DefaultAnnotationText>Create summary of admissions, readmissions, and readmissions &lt;= 30 by Hospital Name and department</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="522" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Sum of all Readmissions]/[Number of Admissions]" field="Readmission Rate" size="4" type="Float" />
+            <FormulaField expression="[Sum of R30 Readmissions]/[Number of Admissions]" field="R30 Rate" size="4" type="Float" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Calculation readmission and readmission <= 30 rates ]]></AnnotationText>
+          <DefaultAnnotationText>Readmission Rate = [Sum of all Readmissions]/[Number of Admissions]
+R30 Rate = [...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="666" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\randa\AppData\Local\Temp\Engine_12888_c4a1c2c328ef4bd390342bfe46a75a96_\Engine_6212_ac8ca8b2af6e48c3bb9e4f95ab00191e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>M5- Task5 V1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
