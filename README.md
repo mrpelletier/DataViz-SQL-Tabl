@@ -1,6 +1,6 @@
 ## Medicare Data Visualization
 
-<i> For this project I explored the newly passed Affordable Care Act, which established the HHRP (Hospital Readmission Reduction Program) to penalize hospitals with high readmission rates for certain medical conditions. I used an ETL tool, Alteryx, to pipeline medicare data into a MySQL database that I created. I cleaned and prepared the data in MySQL before connecting the database to Tableau to create a dashboard of some of my takeaways of the data (MedicareDB.twbx). </i>
+<i> For this project I explored the newly passed Affordable Care Act, which established the HHRP (Hospital Readmission Reduction Program) to penalize hospitals with high readmission rates for certain medical conditions. I used an ETL tool, Alteryx, to pipeline medicare data into a MySQL database (MedicareDW.sql) that I created. I cleaned and prepared the data in MySQL before connecting the database to Tableau to create a dashboard of some of my takeaways of the data (MedicareDB.twbx). </i>
 
 ## Findings
 
