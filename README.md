@@ -9,3 +9,6 @@
   <li>High CHF rates were constant in Pennsylvannia Hospitals</li>
   <li>Hisppanic and Latino populations had highest readmission rates for CHF at 25%</li>
   <li>"General Hospital" has had a significant uptick in readmission rates for pneumonia in the last 6 months and should be monitored.</li></i>
+
+  If you do not have Tableau installed on your current machine, you can download this quick .twbx file reader:
+  https://www.tableau.com/products/reader/download
